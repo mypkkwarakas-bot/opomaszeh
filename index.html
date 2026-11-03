@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#5237c4">
+<meta name="color-scheme" content="light dark">
+<title>MyWallet</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="MyWallet">
+<style>
+/* Shell only: hosts the two original pages untouched. No styling of page content. */
+html,body{margin:0;height:100%;background:#5237c4;overflow:hidden}
+iframe{position:fixed;inset:0;width:100%;height:100%;border:0;background:transparent}
+iframe[hidden]{display:none}
+noscript{color:#fff;font:16px system-ui,sans-serif;display:block;padding:24px}
+</style>
+</head>
+<body>
+<iframe id="f-movo" title="MyWallet" src="pages/movo.html"></iframe>
+<iframe id="f-fin" title="Finance &amp; Profile" data-src="pages/finance-profile.html" hidden></iframe>
+<noscript>MyWallet membutuhkan JavaScript. <a href="pages/movo.html" style="color:#fff">Buka halaman utama</a></noscript>
+<script src="assets/shell.js"></script>
+</body>
+</html>
