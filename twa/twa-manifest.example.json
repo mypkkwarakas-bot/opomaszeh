@@ -1,0 +1,22 @@
+{
+  "_note": "TEMPLATE. Replace every REPLACE_* value. Normally `bubblewrap init --manifest=https://YOUR-DOMAIN/manifest.webmanifest` generates the real twa-manifest.json for you.",
+  "packageId": "REPLACE_WITH_YOUR_APPLICATION_ID",
+  "host": "REPLACE_WITH_YOUR_DOMAIN",
+  "name": "MyWallet",
+  "launcherName": "MyWallet",
+  "display": "standalone",
+  "orientation": "portrait",
+  "themeColor": "#5237c4",
+  "navigationColor": "#5237c4",
+  "backgroundColor": "#5237c4",
+  "startUrl": "/index.html",
+  "iconUrl": "https://REPLACE_WITH_YOUR_DOMAIN/icons/icon-512.png",
+  "maskableIconUrl": "https://REPLACE_WITH_YOUR_DOMAIN/icons/maskable-512.png",
+  "webManifestUrl": "https://REPLACE_WITH_YOUR_DOMAIN/manifest.webmanifest",
+  "enableNotifications": false,
+  "enableSiteSettingsShortcut": false,
+  "appVersionName": "1.0.0",
+  "appVersionCode": 1,
+  "signingKey": { "path": "./android.keystore", "alias": "REPLACE_WITH_YOUR_KEY_ALIAS" },
+  "fallbackType": "customtabs"
+}
